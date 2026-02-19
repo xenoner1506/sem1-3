@@ -8,4 +8,6 @@ Yandex.Contest:
 
 ## Useful links
 
-- [ccpreference](https://cppreference.com/)
+- [cppreference](https://cppreference.com/)
+- [VS Code](https://code.visualstudio.com/)
+  - [Configuration for Windows](https://code.visualstudio.com/docs/cpp/config-mingw)
