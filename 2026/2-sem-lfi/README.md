@@ -12,6 +12,7 @@ Yandex.Contest:
 - [week 07-2](https://contest.yandex.ru/contest/92294/enter)
 - [week 08](https://contest.yandex.ru/contest/92574/enter)
 - [week 09](https://contest.yandex.ru/contest/92866/enter)
+- [week 10](https://contest.yandex.ru/contest/93143/enter)
 
 ## Useful links
 
