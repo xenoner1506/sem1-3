@@ -75,17 +75,11 @@ void insert(HashTable *&table, std::string key, int value) {
 }
 
 void destroy_list(Node *&HEAD) {
-  if (HEAD == nullptr) {
-    return;
+  while (HEAD != nullptr) {
+    Node *temp = HEAD;
+    HEAD = HEAD->next;
+    delete temp;
   }
-  Node *current = HEAD;
-  Node *next = HEAD->next;
-  while (current != nullptr) {
-    next = next->next;
-    delete current;
-    current = next;
-  }
-  HEAD = nullptr;
 }
 
 void destroy_table(HashTable *&table) {
@@ -114,12 +108,12 @@ void print(HashTable *const &table) {
 
 int main() {
   HashTable *table = create_table(100);
-  // insert(table, "a", +0);
-  // insert(table, "b", +1);
-  // insert(table, "c", -1);
-  // insert(table, "d", -2);
-  // insert(table, "d", +5);
-  print(table);
+  insert(table, "a", +0);
+  insert(table, "b", +1);
+  insert(table, "c", -1);
+  insert(table, "d", -2);
+  insert(table, "d", +5);
+  // print(table);
   destroy_table(table);
   return 0;
 }
